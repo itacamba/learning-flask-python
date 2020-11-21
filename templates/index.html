@@ -7,8 +7,11 @@
 </head>
 <body>
     <h1>Home {{content}}!</h1>
-    <p>{% for _ in range(10) %}</p>
-    <p>hello</p>
+    <p>hello from Home</p>
+    {% for x in range(10) %}
+        {% if x % 2 == 1 %}
+            <p>{{x}}</p>
+        {% endif %}
     {%endfor%}
 </body>
 </html>
